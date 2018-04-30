@@ -6,34 +6,24 @@
     android:layout_height="match_parent"
     tools:context="com.example.julius.usefragments.MainActivity">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/seekBar1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-        android:text="Button" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="text" >
-        <requestFocus />
-    </EditText>
-
-    <SeekBar
-        android:id="@+id/seekBar1"
+    <fragment
+        android:id="@+id/toolbar_fragment"
+        android:name="com.example.julius.usefragments.ToolbarFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/editText1"
-        android:layout_marginTop="14dp"
+        android:layout_alignParentTop="true"
+        tools:layout="@layout/toolbar_fragment"
+        />
+
+    <fragment
+        android:id="@+id/text_fragment"
+        android:name="com.example.julius.usefragments.TextFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        tools:layout="@layout/text_fragment"
         />
 
 
